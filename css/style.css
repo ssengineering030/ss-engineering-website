@@ -1,0 +1,13 @@
+body { padding-top: 88px; }
+
+:root{--navy:#0a1f44;--orange:#ff7b00;--silver:#c0c0c0;}
+html{scroll-behavior:smooth;}
+#backToTop{position:fixed;right:24px;bottom:24px;width:48px;height:48px;border-radius:9999px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .6s,visibility .6s,transform .2s;z-index:60}
+#backToTop.show{opacity:1;visibility:visible}
+#backToTop:hover{background:var(--orange);transform:translateY(-3px)}
+@media (max-width:768px){.mobile-menu{display:block}}
+.fade-in-on-scroll{opacity:0;transform:translateY(8px);transition:opacity .6s ease, transform .6s ease}
+.fade-in-on-scroll.visible{opacity:1;transform:translateY(0)}
+.full-width-img{width:100%;border-radius:8px;margin-top:18px}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
